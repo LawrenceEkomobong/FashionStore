@@ -1,6 +1,6 @@
 [
   {
-    "images": "Images/Product1.jpg",
+    "images": "Images/product1.jpg",
     "name": "Italin cover shoe",
     "Price": "#60,000 naira"
   },
@@ -10,7 +10,7 @@
     "Price": "#40,000 naira"
   },
   {
-    "images": "Images/Product3.jpg",
+    "images": "Images/product3.jpg",
     "name": "High heels",
     "Price": "#30,000 naira"
   },
