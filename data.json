@@ -1,56 +1,56 @@
 [
   {
-    "images": "/Images/Product1.jpg",
+    "images": "Images/Product1.jpg",
     "name": "Italin cover shoe",
     "Price": "#60,000 naira"
   },
   {
-    "images": "/Images/Product2.jpg",
+    "images": "Images/Product2.jpg",
     "name": "Nike air max",
     "Price": "#40,000 naira"
   },
   {
-    "images": "/Images/Product3.jpg",
+    "images": "Images/Product3.jpg",
     "name": "High heels",
     "Price": "#30,000 naira"
   },
   {
-    "images": "/Images/Product4.jpg",
+    "images": "Images/Product4.jpg",
     "name": "Snickers",
     "Price": "#25,000 naira"
   },
   {
-    "images": "/Images/Product5.jpg",
+    "images": "Images/Product5.jpg",
     "name": "Snicker boots",
     "Price": "#50,000 naira"
   },
   {
-    "images": "/Images/Product6.jpg",
+    "images": "Images/Product6.jpg",
     "name": "Adidas boots",
     "Price": "#55,000 naira"
   },
   {
-    "images": "/Images/Product7.jpg",
+    "images": "Images/Product7.jpg",
     "name": "Versace cover shoe",
     "Price": "#22,000 naira"
   },
   {
-    "images": "/Images/Product8.jpg",
+    "images": "Images/Product8.jpg",
     "name": "D&G high heels",
     "Price": "#35,000 naira"
   },
   {
-    "images": "/Images/Product9.jpg",
+    "images": "Images/Product9.jpg",
     "name": "Footballers stud",
     "Price": "#40,000 naira"
   },
   {
-    "images": "/Images/Product10.jpg",
+    "images": "Images/Product10.jpg",
     "name": "Puma cover shoe",
     "Price": "#60,000 naira"
   },
   {
-    "images": "/Images/Product11.jpg",
+    "images": "Images/Product11.jpg",
     "name": "Louis Vuitton Palms",
     "Price": "#10,000 naira"
   }
