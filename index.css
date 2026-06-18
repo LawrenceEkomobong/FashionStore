@@ -45,6 +45,7 @@ main {
 .first-text h1 {
   font-family: 'Courier New', Courier, monospace; /* Requires a monospaced font */
   font-size: 16px;
+  font-weight: 400;
   white-space: nowrap;          /* Keeps text on a single line */
   overflow: hidden;             /* Hides unrevealed characters */
   width: 0;                     /* Starting state */
@@ -111,6 +112,8 @@ input:focus {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  font-family: 'Open Sans';
+  font-weight: 600;
 }
 
 .last-text {
@@ -173,6 +176,14 @@ input:focus {
     padding: 30px;
     gap: 40px;
   }
+  .first-text {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .first-text h4 {
+    font-size: 18px;
+  }
 
   .first-text h1 {
     font-size: 20px;
@@ -204,6 +215,11 @@ input:focus {
     max-width: 500px;
     padding: 35px;
     border-radius: 12px;
+  }
+  .first-text {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
   }
 
   .first-text h1 {
