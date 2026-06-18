@@ -45,7 +45,7 @@ main {
 .first-text h1 {
   font-family: 'Courier New', Courier, monospace; /* Requires a monospaced font */
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   white-space: nowrap;          /* Keeps text on a single line */
   overflow: hidden;             /* Hides unrevealed characters */
   width: 0;                     /* Starting state */
