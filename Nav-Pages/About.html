@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | [Your Brand Name]</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+  /* ===========================
+   GLOBAL / BRAND TOKENS
+   =========================== */
+:root {
+  --color-bg: #faf9f7;
+  --color-bg-alt: #f1efeb;
+  --color-text: #1a1a1a;
+  --color-text-muted: #5c5c5c;
+  --color-accent: #b08d57; /* warm gold — swap for your brand color */
+  --color-border: #e2dfd8;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', Helvetica, Arial, sans-serif;
+  --max-width: 1100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 6%;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+}
+
+
+
+
+
+/* ===========================
+   ABOUT PAGE LAYOUT
+   =========================== */
+.about-page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 6%;
+}
+
+.about-hero {
+  text-align: center;
+}
+
+.about-hero h2{
+  font-family: var(--font-heading);
+  font-size: 25px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.about-section {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-family: var(--font-heading);
+  font-size: 25px;
+  margin-bottom: 24px;
+}
+
+.about-section p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+.alt-bg {
+  background-color: var(--color-bg-alt);
+  margin: 0 -6%;
+  padding: 70px 6%;
+}
+
+/* ===========================
+   GRID CARDS (Sustainability)
+   =========================== */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.about-card {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 32px 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+}
+
+.about-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: black;
+}
+
+.about-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+/* ===========================
+   CLOSING / CTA
+   =========================== */
+.about-closing {
+  text-align: center;
+  padding: 90px 0 110px;
+}
+
+.about-closing h2 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+
+.about-closing p {
+  color: var(--color-text-muted);
+  margin-bottom: 32px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 16px 36px;
+  background-color: var(--color-text);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background 0.25s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--color-accent);
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+.site-footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+</style>
+<body>
+
+  <!-- Hamburger menu nav (placeholder — match your existing structure) -->
+  <header class="site-header">
+    <div class="logo">Fashion Stores</div>
+    
+  </header>
+
+  <main class="about-page">
+
+    <!-- Hero -->
+    <section class="about-hero">
+      <h2>Crafted with Purpose</h2>
+      <p>Every pair tells a story — of where it came from, who made it, and where it's going.</p>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="about-section">
+      <h2>Our Story</h2>
+      <p>
+        We started with a simple belief: great shoes shouldn't cost the earth. Literally.
+        From sourcing responsibly grown materials to partnering with workshops that pay
+        fair wages, every step in our process is built around doing things the right way,
+        not just the fast way.
+      </p>
+    </section>
+
+    <!-- Sustainability -->
+    <section class="about-section alt-bg">
+      <h2>Sustainability at the Core</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Responsible Materials</h3>
+          <p>We use recycled, organic, and high quality materials — without compromising on comfort or durability.</p>
+        </div>
+        <div class="about-card">
+          <h3>Ethical Production</h3>
+          <p>Our partner workshops meet fair labor standards, ensuring every pair is made by hands that are valued and respected.</p>
+        </div>
+        <div class="about-card">
+          <h3>Reduced Footprint</h3>
+          <p>From packaging to shipping, we're constantly working to shrink our environmental impact, one pair at a time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community -->
+    <section class="about-section">
+      <h2>Built With Community</h2>
+      <p>
+        We don't just make shoes for our community — we build with it. A portion of every
+        sale goes back into local initiatives, from youth mentorship programs to clean-up
+        drives. When you wear our shoes, you're walking alongside a bigger purpose.
+      </p>
+    </section>
+
+    <!-- Closing statement -->
+    <section class="about-closing">
+      <h2>Step Into Something Bigger</h2>
+      <p>Premium craftsmanship. Honest practices. A community that cares. That's what we stand for.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Fashion stores. All rights reserved.</p>
+  </footer>
+</body>
+</html>

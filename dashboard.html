@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FashionStore Shoes Dashboard</title>
+  <style>body{visibility:hidden;}</style>
+
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-sec">
+       <div class="menu">
+       <img src="/Images/icon-menu.svg" id="menu">
+          <div class="dropdown" id="dropdown">
+            <h1 id="Close-drop-down">x</h1>
+           <a href="dashboard.html">Home</a>
+           <a href="Nav-Pages/About.html" target="_blank">About us</a>
+           <a href="Nav-Pages/Contact.html" target="_blank">Contact/Support</a>
+           <a href="Nav-Pages/Track-order.html" target="_blank">Track order</a>
+           <div class="log-out">
+           <a href="#" target="_blank" id="logout">Log Out</a>
+           </div>
+          </div>
+      </div>
+       <h2>FashionStore</h2>
+    </div>
+     <div class="desktop-nav">
+
+        <a href="dashboard.html">Home</a>
+        <a href="Nav-Pages/About.html">About Us</a>
+        <a href="Nav-Pages/Contact.html">Support</a>
+        <a href="Nav-Pages/Track-order.html">Track Order</a>
+        <a href="#" id="logout-desktop">Logout</a>
+
+    </div>
+    <img src="/Images/icon-add-to-cart.svg" fetchpriority="high" id="cart-icon">
+  </nav>
+
+  <div class="first-text">
+    <h3>
+      Step into comfort, style, and confidence.
+      Discover premium footwear designed for every occasion—from casual outings to athletic performance.
+      Find the perfect pair that matches your lifestyle and walk every step with confidence.
+    </h3>
+  </div>
+
+  <!-- Products appear here -->
+  <div class="images"></div>
+
+  <!-- Cart Dropdown -->
+  <div class="cart-dropdown">
+    <h3>Cart</h3>
+
+    <div class="cart-content">
+      Your cart is empty.
+
+    </div>
+    <button id="pay-btn">
+  Pay Now</button>
+  </div>
+  <div class="checkout-form">
+
+  <input
+    type="text"
+    id="customer-name"
+    placeholder="Full Name"
+  >
+
+  <input
+    type="email"
+    id="customer-email"
+    placeholder="Email Address"
+  >
+
+  <button id="checkout-btn">
+    Continue to Payment
+  </button>
+
+</div>
+<footer>
+  <div class="text">
+  <h1>FashionStore</h1>
+    <p>Step into comfort, style, and confidence. Premium footwear for every occasion.</p>
+    </div>
+    <div class="footer-box">
+      <h4>Support</h4>
+      <a href="Nav-Pages/FAQ.html">FAQ</a>
+      <a href="Nav-Pages/Shipping.html">Shipping</a>
+      <a href="Nav-Pages/Privacy-Policy.html">Privacy Policy</a>
+    </div>
+     <div class="email">
+      <input type="text" placeholder="NAME" name="name" class="contact-input" id="first-input">
+      <input type="email" placeholder="EMAIL" name="email" class="contact-input" id="second-input">
+      <textarea placeholder="message" name="message" class="contact-textarea" id="email-text"></textarea>
+      <button class="send-btn">SEND MESSAGE</button>
+    </div>
+     <div class="footer-bottom">
+    <p>© 2026 FashionStore. All rights reserved.</p>
+  </div>
+</footer>
+<div id="alert"></div>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="dashboard.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #1e40af,
+    #0f172a
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.first-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 10px;
+}
+
+.first-text h1 {
+  font-family: 'Courier New', Courier, monospace; /* Requires a monospaced font */
+  font-size: 16px;
+  white-space: nowrap;          /* Keeps text on a single line */
+  overflow: hidden;             /* Hides unrevealed characters */
+  width: 0;                     /* Starting state */
+  
+  /* Animates width over 4 seconds, ending at the final keyframe value */
+  animation: slideOut 4s steps(34, end) forwards; 
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  padding-left: 22px;
+}
+
+label {
+  font-size: 17px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+
+input {
+  width: 90%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border-color: royalblue;
+}
+
+::placeholder {
+  padding-left: 3px;
+}
+
+.first-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  width: 66%;
+  height: 40px;
+  border-radius: 5px;
+}
+
+#second-btn {
+  width: 66%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.last-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+.last-text p {
+  font-family: 'Open Sans';
+  text-align: center;
+}
+
+
+@keyframes slideOut {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* code for custom alert */
+
+#alert {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: #111;
+  color: #fff;
+
+  padding: 12px 20px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: 0.3s ease;
+}
+
+#alert.show {
+  opacity: 1;
+  bottom: 40px;
+}
+

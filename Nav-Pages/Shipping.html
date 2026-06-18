@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shipping | [Your Brand Name]</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+/* ===========================
+   GLOBAL / BRAND TOKENS
+   =========================== */
+:root {
+  --color-bg: #faf9f7;
+  --color-bg-alt: #f1efeb;
+  --color-text: #1a1a1a;
+  --color-text-muted: #5c5c5c;
+  --color-accent: #b08d57; /* warm gold — swap for your brand color */
+  --color-border: #e2dfd8;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', Helvetica, Arial, sans-serif;
+  --max-width: 1100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+}
+
+/* ===========================
+   HEADER + HAMBURGER MENU
+   =========================== */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 6%;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+}
+
+
+/* ===========================
+   ABOUT PAGE LAYOUT
+   =========================== */
+
+
+/* ===========================
+   LEGAL PAGES (Privacy/Terms)
+   =========================== */
+.legal-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 6%;
+  min-height: 80vh;
+}
+
+.legal-hero {
+  text-align: center;
+  padding: 100px 0 50px;
+}
+
+.legal-hero h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.legal-hero p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.legal-content {
+  padding-bottom: 110px;
+}
+
+.legal-content h2 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content p {
+  color: var(--color-text-muted);
+  font-size: 0.98rem;
+  margin-bottom: 4px;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+.site-footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+</style>
+<body>
+
+  <main class="legal-page">
+
+    <section class="legal-hero">
+      <h1>Shipping Information</h1>
+    </section>
+
+    <section class="legal-content">
+
+      <h2>Processing Time</h2>
+      <p>Orders are processed within 1–2 business days before they're shipped out.</p>
+
+      <h2>Delivery Time</h2>
+      <p>Once shipped, orders typically arrive within 3–7 business days, depending on your location.</p>
+
+      <h2>Shipping Cost</h2>
+      <p>Shipping costs are calculated at checkout based on your delivery address.</p>
+
+      <h2>Order Tracking</h2>
+      <p>Once your order ships, you can check its status anytime on our Track Order page.</p>
+
+      <h2>Questions?</h2>
+      <p>Reach out to us on our Contact page and we'll be happy to help.</p>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Fashion Stores. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
