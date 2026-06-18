@@ -95,10 +95,13 @@ form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 300px;
 }
 
 .btn {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
   justify-content: center;
   align-items: center;
 }
@@ -110,7 +113,7 @@ button {
   cursor: pointer;
   font-size: 16px;
   width: 66%;
-  height: 40px;
+  height: 35px;
   border-radius: 5px;
 }
 
@@ -140,7 +143,95 @@ button {
   opacity: 1;
   bottom: 40px;
 }
+#signup-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  width: 66%;
+  height: 35px;
+  border-radius: 5px;
+}
 
+
+@media (min-width: 600px) {
+  main {
+    max-width: 450px;
+    padding: 30px;
+    gap: 40px;
+  }
+
+  .first-text h1 {
+    font-size: 20px;
+  }
+
+  .first-text h4 {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input {
+    height: 45px;
+    font-size: 16px;
+  }
+
+  form {
+    height: auto; /* better flexibility on bigger screens */
+    gap: 22px;
+  }
+
+  button,
+  #signup-button {
+    height: 42px;
+    font-size: 17px;
+    width: 70%;
+  }
+
+  .btn {
+    gap: 18px;
+  }
+}
+
+
+@media (min-width: 900px) {
+  main {
+    max-width: 500px;
+    padding: 35px;
+  }
+
+  .first-text h1 {
+    font-size: 22px;
+  }
+
+  .first-text h4 {
+    font-size: 17px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  button,
+  #signup-button {
+    height: 45px;
+    font-size: 18px;
+    width: 75%;
+  }
+
+  #alert {
+    font-size: 15px;
+  }
+}
 
 </style>
 
@@ -157,6 +248,9 @@ button {
     <input type="password"placeholder="enter your password" id="password">
     <div class="btn">
     <button type="submit" id="submit">Login</button>
+    <button type="button" onclick="window.location.href='index.html'" id="signup-button">
+  Create an Account
+</button>
     </div>
     </form>
     <div id="alert"></div>

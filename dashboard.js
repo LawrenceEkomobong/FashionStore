@@ -31,6 +31,19 @@ document.getElementById("logout").addEventListener("click", function (e) {
   // redirect to login page
   window.location.replace("Login.html");
 });
+const desktopLogout = document.getElementById("logout-desktop");
+
+if (desktopLogout) {
+
+desktopLogout.addEventListener("click", function(e){
+
+e.preventDefault();
+
+window.location.replace("Login.html");
+
+});
+
+}
 
 
 

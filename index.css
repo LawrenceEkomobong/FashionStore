@@ -85,7 +85,7 @@ input:focus {
 
 .first-btn {
   display: flex;
-  justify-content: center;
+  padding-left: 45px;
   align-items: center;
 }
 #btn {
@@ -101,7 +101,7 @@ input:focus {
 }
 
 #second-btn {
-  width: 66%;
+  width: 50%;
   height: 40px;
   border-radius: 5px;
   font-size: 18px;
@@ -124,6 +124,7 @@ input:focus {
   font-family: 'Open Sans';
   text-align: center;
 }
+
 
 
 @keyframes slideOut {
@@ -163,3 +164,74 @@ input:focus {
   bottom: 40px;
 }
 
+
+
+
+@media (min-width: 600px) {
+  main {
+    max-width: 450px;
+    padding: 30px;
+    gap: 40px;
+  }
+
+  .first-text h1 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input {
+    height: 45px;
+    font-size: 16px;
+  }
+
+  #btn,
+  #second-btn {
+    height: 45px;
+    font-size: 17px;
+  }
+
+  .first-btn {
+    padding-left: 55px;
+  }
+}
+
+
+@media (min-width: 900px) {
+  main {
+    max-width: 500px;
+    padding: 35px;
+    border-radius: 12px;
+  }
+
+  .first-text h1 {
+    font-size: 22px;
+  }
+
+  .first-text h4 {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  #btn {
+    width: 70%;
+  }
+
+  #second-btn {
+    width: 60%;
+  }
+
+  #alert {
+    font-size: 15px;
+  }
+}
