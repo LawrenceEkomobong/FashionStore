@@ -1,13 +1,25 @@
+// Import Supabase
+import { createClient } from
+'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+// Supabase credentials
+const supabaseUrl = "YOUR_SUPABASE_URL";
+const supabaseKey = "YOUR_SUPABASE_PUBLISHABLE_KEY";
+
+// Create the client
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+// Get the form
 const form = document.getElementById("form");
 
-form.addEventListener("submit", (e) => {
+// event listener
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
-  const confirmPassword =
-    document.getElementById("password-check").value;
+  const confirmPassword = document.getElementById("password-check").value;
 
   if (
     name === "" ||
@@ -29,53 +41,23 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  alert("Validation successful");
-});
-
-
-
-//Supabase auth
-
-import { createClient } from
-'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
-
-const supabaseUrl = "https://yrgydqeiucbtcrfmjura.supabase.co";
-const supabaseKey = "sb_publishable_ZU3DjhAgxTsqfqPFiH4WVg_z5qLYjz5";
-
-const supabase = createClient(
-  supabaseUrl,
-  supabaseKey
-);
-
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const email =
-    document.getElementById("email").value;
-
-  const password =
-    document.getElementById("password").value;
-
-  const { data, error } =
-    await supabase.auth.signUp({
-      email,
-      password,
-    });
+  // Create the account
+  const { data, error } = await supabase.auth.signUp({
+    email,
+    password,
+  });
 
   if (error) {
     showAlert(error.message);
     return;
   }
 
-  showAlert(
-    "Account created successfully."
-  );
+  showAlert("Account created successfully!");
 
-  console.log(data);
-  window.location.href = "Login.html";
+  setTimeout(() => {
+    window.location.href = "Login.html";
+  }, 2000);
 });
-
 
 // code for alerts //
 
