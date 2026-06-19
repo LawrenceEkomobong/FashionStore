@@ -496,3 +496,40 @@ sendBtn.addEventListener('click', function () {
       sendBtn.textContent = 'SEND MESSAGE';
     });
 });
+
+
+// LIGHTBOX
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeLightbox = document.querySelector(".close-lightbox");
+
+// Open lightbox
+document.addEventListener("click", function (e) {
+
+  if (e.target.closest(".product-card img")) {
+
+    lightboxImg.src = e.target.src;
+
+    lightbox.style.display = "flex";
+  }
+
+});
+
+// Close when X is clicked
+closeLightbox.addEventListener("click", function () {
+
+  lightbox.style.display = "none";
+
+});
+
+// Close when overlay is clicked
+lightbox.addEventListener("click", function (e) {
+
+  if (e.target === lightbox) {
+
+    lightbox.style.display = "none";
+
+  }
+
+});
