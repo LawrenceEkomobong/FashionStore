@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fashion store track order page</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <style>
   /* ===========================
@@ -38,13 +38,15 @@ body {
 /* ===========================
    HEADER + HAMBURGER MENU
    =========================== */
-.site-header {
+.cta-button {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+}
+.btn {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 24px 6%;
-  border-bottom: 1px solid var(--color-border);
-  position: relative;
 }
 
 
@@ -94,7 +96,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: var(--color-bg-alt);
+  background-color: lightgrey;
   border: 1px solid var(--color-border);
   padding: 40px;
 }
@@ -196,8 +198,9 @@ body {
 
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" placeholder="you@example.com" required />
-
+        <div class="btn">
         <button type="submit" class="cta-button">Track Order</button>
+        </div>
       </form>
 
       <div class="track-result" id="trackResult"></div>
@@ -206,7 +209,7 @@ body {
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Your Brand Name. All rights reserved.</p>
+    <p>&copy; 2026 Fashion Store. All rights reserved.</p>
   </footer>
 
 </body>
