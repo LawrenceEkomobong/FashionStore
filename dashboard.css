@@ -128,6 +128,58 @@ display:none;
   gap:30px;
   min-height: 100vh; 
 }
+/* LIGHTBOX */
+
+.lightbox{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background:rgba(0,0,0,.85);
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.lightbox img{
+  max-width:90%;
+  max-height:85vh;
+
+  border-radius:10px;
+
+  animation:zoomIn .3s ease;
+}
+
+.close-lightbox{
+  position:absolute;
+
+  top:20px;
+  right:30px;
+
+  color:white;
+
+  font-size:40px;
+
+  cursor:pointer;
+
+  font-weight:bold;
+}
+
+@keyframes zoomIn{
+
+from{
+  transform:scale(.7);
+  opacity:0;
+}
+
+to{
+  transform:scale(1);
+  opacity:1;
+}
+
+}
 
 /* PRODUCT CARD */
 
@@ -401,7 +453,7 @@ nav{
 
 .first-text h3{
     font-size:24px;
-    line-height:1.7;
+    line-height: 2;
 }
 
 .images{
@@ -496,12 +548,10 @@ footer{
 /* ================= DESKTOP ================= */
 
 @media (min-width:1200px){
+  
   .desktop-nav{
-
-display:flex;
-
-gap:35px;
-
+display: flex;
+gap: 38px;
 align-items:center;
 
 }
@@ -567,13 +617,13 @@ height:280px;
 
 .first-text{
 
-max-width:1100px;
+max-width:1200px;
 
 }
 
 .first-text h3{
 
-font-size:32px;
+font-size:30px;
 
 }
 
@@ -605,58 +655,6 @@ width:380px;
 
 width:480px;
 
-}
-
-}
-/* LIGHTBOX */
-
-.lightbox{
-  display:none;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100vh;
-  background:rgba(0,0,0,.85);
-  justify-content:center;
-  align-items:center;
-  z-index:9999;
-}
-
-.lightbox img{
-  max-width:90%;
-  max-height:85vh;
-
-  border-radius:10px;
-
-  animation:zoomIn .3s ease;
-}
-
-.close-lightbox{
-  position:absolute;
-
-  top:20px;
-  right:30px;
-
-  color:white;
-
-  font-size:40px;
-
-  cursor:pointer;
-
-  font-weight:bold;
-}
-
-@keyframes zoomIn{
-
-from{
-  transform:scale(.7);
-  opacity:0;
-}
-
-to{
-  transform:scale(1);
-  opacity:1;
 }
 
 }
