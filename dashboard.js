@@ -90,7 +90,7 @@ data.forEach((el, index) => {
 
     <div class="quantity-box">
       <button class="minus">-</button>
-      <span>0</span>
+      <span>1</span>
       <button class="plus">+</button>
     </div>
 
